@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <SeekBar
+        android:id="@+id/sb_color"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:max="100"
+        android:maxHeight="3dp"
+        />
+
+    <com.lonelypluto.colorpickerdemo.ColorSizePreView
+        android:id="@+id/colorsizepreview"
+        android:layout_width="@dimen/color_size_preview_width"
+        android:layout_height="@dimen/color_size_preview_height"
+        />
+
+    <TextView
+        android:id="@+id/tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="选择的颜色"
+        android:textSize="20sp"
+        />
+</LinearLayout>
